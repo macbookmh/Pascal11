@@ -1,0 +1,20 @@
+program tangthaison;
+uses crt;
+var a,b,c,d,x1,x2: real;
+
+begin
+writeln ('Nhap a,b,c');
+readln(a,b,c);
+d:=sqr(b)-4*a*c;
+if d>0 then 
+    begin
+    writeln('pt co 2 nghiem') ;
+    x1:=(-b+sqrt(d))/(2*a);
+    x2:=(-b-sqrt(d))/(2*a);
+    writeln('x1=',x1:4:1);
+    writeln('x2=',x2:4:1);
+    end
+else 
+    writeln ('pt co 0, 1 nghiem');
+readln;
+end.
